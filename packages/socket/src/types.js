@@ -8,7 +8,10 @@ type AbsintheSocket = {|
   channel: Channel,
   channelJoinCreated: boolean,
   notifiers: Array<Notifier<any>>,
-  phoenixSocket: PhoenixSocket
+  phoenixSocket: PhoenixSocket,
+  absintheChannelName: string,
+  inactiveTimeout: number,
+  inactiveTimeoutDuration: number
 |};
 
 type PushHandler<Response: Object> = {|
